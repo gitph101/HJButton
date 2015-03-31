@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E2E8F3C81ACA7FA100735B43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E8F3C71ACA7FA100735B43 /* AppDelegate.swift */; };
+		E2E8F3CB1ACA7FA100735B43 /* HJButton.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E2E8F3C91ACA7FA100735B43 /* HJButton.xcdatamodeld */; };
+		E2E8F3CD1ACA7FA100735B43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E8F3CC1ACA7FA100735B43 /* ViewController.swift */; };
+		E2E8F3D01ACA7FA100735B43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2E8F3CE1ACA7FA100735B43 /* Main.storyboard */; };
+		E2E8F3D21ACA7FA100735B43 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2E8F3D11ACA7FA100735B43 /* Images.xcassets */; };
+		E2E8F3D51ACA7FA100735B43 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2E8F3D31ACA7FA100735B43 /* LaunchScreen.xib */; };
+		E2E8F3E11ACA7FA100735B43 /* HJButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E8F3E01ACA7FA100735B43 /* HJButtonTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E2E8F3DB1ACA7FA100735B43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2E8F3BA1ACA7FA100735B43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2E8F3C11ACA7FA100735B43;
+			remoteInfo = HJButton;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E2E8F3C21ACA7FA100735B43 /* HJButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HJButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2E8F3C61ACA7FA100735B43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2E8F3C71ACA7FA100735B43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E2E8F3CA1ACA7FA100735B43 /* HJButton.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HJButton.xcdatamodel; sourceTree = "<group>"; };
+		E2E8F3CC1ACA7FA100735B43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E2E8F3CF1ACA7FA100735B43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E2E8F3D11ACA7FA100735B43 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E2E8F3D41ACA7FA100735B43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E2E8F3DA1ACA7FA100735B43 /* HJButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HJButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2E8F3DF1ACA7FA100735B43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2E8F3E01ACA7FA100735B43 /* HJButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HJButtonTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E2E8F3BF1ACA7FA100735B43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2E8F3D71ACA7FA100735B43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E2E8F3B91ACA7FA100735B43 = {
+			isa = PBXGroup;
+			children = (
+				E2E8F3C41ACA7FA100735B43 /* HJButton */,
+				E2E8F3DD1ACA7FA100735B43 /* HJButtonTests */,
+				E2E8F3C31ACA7FA100735B43 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E2E8F3C31ACA7FA100735B43 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E2E8F3C21ACA7FA100735B43 /* HJButton.app */,
+				E2E8F3DA1ACA7FA100735B43 /* HJButtonTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2E8F3C41ACA7FA100735B43 /* HJButton */ = {
+			isa = PBXGroup;
+			children = (
+				E2E8F3C71ACA7FA100735B43 /* AppDelegate.swift */,
+				E2E8F3CC1ACA7FA100735B43 /* ViewController.swift */,
+				E2E8F3CE1ACA7FA100735B43 /* Main.storyboard */,
+				E2E8F3D11ACA7FA100735B43 /* Images.xcassets */,
+				E2E8F3D31ACA7FA100735B43 /* LaunchScreen.xib */,
+				E2E8F3C91ACA7FA100735B43 /* HJButton.xcdatamodeld */,
+				E2E8F3C51ACA7FA100735B43 /* Supporting Files */,
+			);
+			path = HJButton;
+			sourceTree = "<group>";
+		};
+		E2E8F3C51ACA7FA100735B43 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E2E8F3C61ACA7FA100735B43 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E2E8F3DD1ACA7FA100735B43 /* HJButtonTests */ = {
+			isa = PBXGroup;
+			children = (
+				E2E8F3E01ACA7FA100735B43 /* HJButtonTests.swift */,
+				E2E8F3DE1ACA7FA100735B43 /* Supporting Files */,
+			);
+			path = HJButtonTests;
+			sourceTree = "<group>";
+		};
+		E2E8F3DE1ACA7FA100735B43 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E2E8F3DF1ACA7FA100735B43 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E2E8F3C11ACA7FA100735B43 /* HJButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2E8F3E41ACA7FA100735B43 /* Build configuration list for PBXNativeTarget "HJButton" */;
+			buildPhases = (
+				E2E8F3BE1ACA7FA100735B43 /* Sources */,
+				E2E8F3BF1ACA7FA100735B43 /* Frameworks */,
+				E2E8F3C01ACA7FA100735B43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HJButton;
+			productName = HJButton;
+			productReference = E2E8F3C21ACA7FA100735B43 /* HJButton.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E2E8F3D91ACA7FA100735B43 /* HJButtonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2E8F3E71ACA7FA100735B43 /* Build configuration list for PBXNativeTarget "HJButtonTests" */;
+			buildPhases = (
+				E2E8F3D61ACA7FA100735B43 /* Sources */,
+				E2E8F3D71ACA7FA100735B43 /* Frameworks */,
+				E2E8F3D81ACA7FA100735B43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2E8F3DC1ACA7FA100735B43 /* PBXTargetDependency */,
+			);
+			name = HJButtonTests;
+			productName = HJButtonTests;
+			productReference = E2E8F3DA1ACA7FA100735B43 /* HJButtonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E2E8F3BA1ACA7FA100735B43 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = HJ;
+				TargetAttributes = {
+					E2E8F3C11ACA7FA100735B43 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					E2E8F3D91ACA7FA100735B43 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = E2E8F3C11ACA7FA100735B43;
+					};
+				};
+			};
+			buildConfigurationList = E2E8F3BD1ACA7FA100735B43 /* Build configuration list for PBXProject "HJButton" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E2E8F3B91ACA7FA100735B43;
+			productRefGroup = E2E8F3C31ACA7FA100735B43 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E2E8F3C11ACA7FA100735B43 /* HJButton */,
+				E2E8F3D91ACA7FA100735B43 /* HJButtonTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E2E8F3C01ACA7FA100735B43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2E8F3D01ACA7FA100735B43 /* Main.storyboard in Resources */,
+				E2E8F3D51ACA7FA100735B43 /* LaunchScreen.xib in Resources */,
+				E2E8F3D21ACA7FA100735B43 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2E8F3D81ACA7FA100735B43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E2E8F3BE1ACA7FA100735B43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2E8F3CD1ACA7FA100735B43 /* ViewController.swift in Sources */,
+				E2E8F3C81ACA7FA100735B43 /* AppDelegate.swift in Sources */,
+				E2E8F3CB1ACA7FA100735B43 /* HJButton.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2E8F3D61ACA7FA100735B43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2E8F3E11ACA7FA100735B43 /* HJButtonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E2E8F3DC1ACA7FA100735B43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2E8F3C11ACA7FA100735B43 /* HJButton */;
+			targetProxy = E2E8F3DB1ACA7FA100735B43 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E2E8F3CE1ACA7FA100735B43 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2E8F3CF1ACA7FA100735B43 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E2E8F3D31ACA7FA100735B43 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2E8F3D41ACA7FA100735B43 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E2E8F3E21ACA7FA100735B43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E2E8F3E31ACA7FA100735B43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E2E8F3E51ACA7FA100735B43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HJButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E2E8F3E61ACA7FA100735B43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HJButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E2E8F3E81ACA7FA100735B43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HJButtonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HJButton.app/HJButton";
+			};
+			name = Debug;
+		};
+		E2E8F3E91ACA7FA100735B43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HJButtonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HJButton.app/HJButton";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E2E8F3BD1ACA7FA100735B43 /* Build configuration list for PBXProject "HJButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2E8F3E21ACA7FA100735B43 /* Debug */,
+				E2E8F3E31ACA7FA100735B43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2E8F3E41ACA7FA100735B43 /* Build configuration list for PBXNativeTarget "HJButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2E8F3E51ACA7FA100735B43 /* Debug */,
+				E2E8F3E61ACA7FA100735B43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E2E8F3E71ACA7FA100735B43 /* Build configuration list for PBXNativeTarget "HJButtonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2E8F3E81ACA7FA100735B43 /* Debug */,
+				E2E8F3E91ACA7FA100735B43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E2E8F3C91ACA7FA100735B43 /* HJButton.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E2E8F3CA1ACA7FA100735B43 /* HJButton.xcdatamodel */,
+			);
+			currentVersion = E2E8F3CA1ACA7FA100735B43 /* HJButton.xcdatamodel */;
+			path = HJButton.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E2E8F3BA1ACA7FA100735B43 /* Project object */;
+}
