@@ -14,6 +14,7 @@
 		E2E8F3D21ACA7FA100735B43 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2E8F3D11ACA7FA100735B43 /* Images.xcassets */; };
 		E2E8F3D51ACA7FA100735B43 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2E8F3D31ACA7FA100735B43 /* LaunchScreen.xib */; };
 		E2E8F3E11ACA7FA100735B43 /* HJButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E8F3E01ACA7FA100735B43 /* HJButtonTests.swift */; };
+		E2E8F3EC1ACA800D00735B43 /* HJButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E8F3EB1ACA800D00735B43 /* HJButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		E2E8F3DA1ACA7FA100735B43 /* HJButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HJButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2E8F3DF1ACA7FA100735B43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2E8F3E01ACA7FA100735B43 /* HJButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HJButtonTests.swift; sourceTree = "<group>"; };
+		E2E8F3EB1ACA800D00735B43 /* HJButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HJButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 		E2E8F3B91ACA7FA100735B43 = {
 			isa = PBXGroup;
 			children = (
+				E2E8F3EA1ACA7FE000735B43 /* HJButton */,
 				E2E8F3C41ACA7FA100735B43 /* HJButton */,
 				E2E8F3DD1ACA7FA100735B43 /* HJButtonTests */,
 				E2E8F3C31ACA7FA100735B43 /* Products */,
@@ -113,6 +116,14 @@
 				E2E8F3DF1ACA7FA100735B43 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E2E8F3EA1ACA7FE000735B43 /* HJButton */ = {
+			isa = PBXGroup;
+			children = (
+				E2E8F3EB1ACA800D00735B43 /* HJButton.swift */,
+			);
+			name = HJButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +229,7 @@
 				E2E8F3CD1ACA7FA100735B43 /* ViewController.swift in Sources */,
 				E2E8F3C81ACA7FA100735B43 /* AppDelegate.swift in Sources */,
 				E2E8F3CB1ACA7FA100735B43 /* HJButton.xcdatamodeld in Sources */,
+				E2E8F3EC1ACA800D00735B43 /* HJButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

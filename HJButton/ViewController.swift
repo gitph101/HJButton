@@ -12,6 +12,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var btn : HJButton = HJButton(frame: CGRectMake(0, 100, 300, 100))
+//        btn.backgroundColor  = UIColor.redColor()
+        btn.buttonType = HJButton.HJFlashButtonType.HJFlashButtonTypeInner
+        view.addSubview(btn)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -19,7 +24,8 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    
 
 }
 
