@@ -17,6 +17,12 @@ class HJButton: UIView,UIGestureRecognizerDelegate {
     
     let HJFlashInnerCircleInitialRaius:CGFloat = 20.0
     var flashColor : UIColor
+    var color: UIColor?
+    
+    
+    var name: String?
+    
+    
     var buttonType : HJFlashButtonType = HJFlashButtonType.hjFlashButtonTypeInner
         {
         willSet
