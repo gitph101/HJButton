@@ -16,6 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     var str: String?
 
+    var nickname: String?
+    var hello: String?
     var view: UIView?
     var name: String?
 
