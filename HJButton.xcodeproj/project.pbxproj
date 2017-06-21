@@ -175,9 +175,11 @@
 				TargetAttributes = {
 					E2E8F3C11ACA7FA100735B43 = {
 						CreatedOnToolsVersion = 6.2;
+						LastSwiftMigration = 0830;
 					};
 					E2E8F3D91ACA7FA100735B43 = {
 						CreatedOnToolsVersion = 6.2;
+						LastSwiftMigration = 0830;
 						TestTargetID = E2E8F3C11ACA7FA100735B43;
 					};
 				};
@@ -357,6 +359,7 @@
 				INFOPLIST_FILE = HJButton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -367,6 +370,7 @@
 				INFOPLIST_FILE = HJButton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -385,6 +389,7 @@
 				INFOPLIST_FILE = HJButtonTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HJButton.app/HJButton";
 			};
 			name = Debug;
@@ -400,6 +405,7 @@
 				INFOPLIST_FILE = HJButtonTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HJButton.app/HJButton";
 			};
 			name = Release;
@@ -423,6 +429,7 @@
 				E2E8F3E61ACA7FA100735B43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2E8F3E71ACA7FA100735B43 /* Build configuration list for PBXNativeTarget "HJButtonTests" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +438,7 @@
 				E2E8F3E91ACA7FA100735B43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

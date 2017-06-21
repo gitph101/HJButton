@@ -13,9 +13,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var btn : HJButton = HJButton(frame: CGRectMake(0, 100, 300, 100))
+        var btn : HJButton = HJButton(frame: CGRect(x: 0, y: 100, width: 300, height: 100))
 //        btn.backgroundColor  = UIColor.redColor()
-        btn.buttonType = HJButton.HJFlashButtonType.HJFlashButtonTypeInner
+        btn.buttonType = HJButton.HJFlashButtonType.hjFlashButtonTypeInner
         view.addSubview(btn)
         // Do any additional setup after loading the view, typically from a nib.
     }

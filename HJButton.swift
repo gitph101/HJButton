@@ -5,23 +5,23 @@
 //  Created by 研究院01 on 15/3/31.
 //  Copyright (c) 2015年 HJ. All rights reserved.
 //
-
+//  @@@ 修改增加注释
 import UIKit
 import Foundation
 class HJButton: UIView,UIGestureRecognizerDelegate {
     enum HJFlashButtonType{
-        case HJFlashButtonTypeInner
-        case HJFlashButtonTypeOutter
+        case hjFlashButtonTypeInner
+        case hjFlashButtonTypeOutter
         
     }
     
     let HJFlashInnerCircleInitialRaius:CGFloat = 20.0
     var flashColor : UIColor
-    var buttonType : HJFlashButtonType = HJFlashButtonType.HJFlashButtonTypeInner
+    var buttonType : HJFlashButtonType = HJFlashButtonType.hjFlashButtonTypeInner
         {
         willSet
         {
-            if buttonType == HJFlashButtonType.HJFlashButtonTypeInner{
+            if buttonType == HJFlashButtonType.hjFlashButtonTypeInner{
                 self.clipsToBounds = true
             }
             else{
@@ -30,7 +30,7 @@ class HJButton: UIView,UIGestureRecognizerDelegate {
         }
         didSet
         {
-            if buttonType == HJFlashButtonType.HJFlashButtonTypeInner{
+            if buttonType == HJFlashButtonType.hjFlashButtonTypeInner{
                 self.clipsToBounds = true
             }
             else{
@@ -38,11 +38,11 @@ class HJButton: UIView,UIGestureRecognizerDelegate {
             }
         }
     }
-    private var textLable:UILabel
+    fileprivate var textLable:UILabel
     
 
     override init(frame: CGRect) {
-        flashColor = UIColor.redColor()
+        flashColor = UIColor.red
         textLable = UILabel(frame: frame)
         super.init(frame: frame)
         setInit()
@@ -53,31 +53,31 @@ class HJButton: UIView,UIGestureRecognizerDelegate {
      }
 
     func setInit(){
-        textLable.backgroundColor = UIColor.clearColor()
-        textLable.textColor = UIColor.whiteColor()
-        textLable.textAlignment = NSTextAlignment.Center
-        textLable.userInteractionEnabled = true
+        textLable.backgroundColor = UIColor.clear
+        textLable.textColor = UIColor.white
+        textLable.textAlignment = NSTextAlignment.center
+        textLable.isUserInteractionEnabled = true
         addSubview(textLable)
-        backgroundColor = UIColor.grayColor()
+        backgroundColor = UIColor.gray
         
-        userInteractionEnabled = true
-        var tap : UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "didTap:")
+        isUserInteractionEnabled = true
+        let tap : UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(HJButton.didTap(_:)))
         addGestureRecognizer(tap)
     }
     
 
     
     
-    func didTap(tapGestureHandler:UITapGestureRecognizer){
+    func didTap(_ tapGestureHandler:UITapGestureRecognizer){
     
-        var tapLocation : CGPoint = tapGestureHandler.locationInView(self)
+        var tapLocation : CGPoint = tapGestureHandler.location(in: self)
         var circleShape : CAShapeLayer
         var scale : CGFloat = 1.0
         
         let width:CGFloat = self.bounds.width
         let height:CGFloat = self.bounds.height
         
-        if self.buttonType == HJFlashButtonType.HJFlashButtonTypeInner{
+        if self.buttonType == HJFlashButtonType.hjFlashButtonTypeInner{
             let biggerEdge:CGFloat = width > height ? width : height
             let smallerEdge = width > height ? height : width
             let radius = smallerEdge/2 > HJFlashInnerCircleInitialRaius ? HJFlashInnerCircleInitialRaius:smallerEdge/2
@@ -86,35 +86,35 @@ class HJButton: UIView,UIGestureRecognizerDelegate {
             println(biggerEdge)
             println(radius)
             println(scale)
-            circleShape = createCircleShapeWithPosition(CGPointMake(tapLocation.x - radius, tapLocation.y - radius), rect: CGRectMake(0, 0, radius * 2, radius * 2), radius: radius)
+            circleShape = createCircleShapeWithPosition(CGPoint(x: tapLocation.x - radius, y: tapLocation.y - radius), rect: CGRect(x: 0, y: 0, width: radius * 2, height: radius * 2), radius: radius)
         }else{
             scale = 2.5
-            circleShape = createCircleShapeWithPosition(CGPointMake(width/2, height/2), rect: CGRectMake(-CGRectGetMidX(self.bounds), -CGRectGetMidY(self.bounds), width, height), radius: layer.cornerRadius)
+            circleShape = createCircleShapeWithPosition(CGPoint(x: width/2, y: height/2), rect: CGRect(x: -self.bounds.midX, y: -self.bounds.midY, width: width, height: height), radius: layer.cornerRadius)
     
         }
         layer.addSublayer(circleShape)
         var groupAnimation:CAAnimationGroup = createFlashAnimationWithScale(scale, duration: 2.5)
         groupAnimation.setValue(circleShape, forKey: "circleShaperLayer")
         
-        circleShape.addAnimation(groupAnimation, forKey: nil)
+        circleShape.add(groupAnimation, forKey: nil)
         circleShape.delegate = self
     }
     
-    func createCircleShapeWithPosition(position:CGPoint,rect:CGRect,radius:CGFloat) -> CAShapeLayer{
-        var circleShape:CAShapeLayer = CAShapeLayer()
-        circleShape.path = UIBezierPath(roundedRect: rect, cornerRadius: radius).CGPath
+    func createCircleShapeWithPosition(_ position:CGPoint,rect:CGRect,radius:CGFloat) -> CAShapeLayer{
+        let circleShape:CAShapeLayer = CAShapeLayer()
+        circleShape.path = UIBezierPath(roundedRect: rect, cornerRadius: radius).cgPath
         circleShape.position = position
         
-        if self.buttonType == HJFlashButtonType.HJFlashButtonTypeInner{
-            circleShape.bounds = CGRectMake(0, 0, radius * 2, radius * 2)
-            if flashColor == UIColor.clearColor() {
-                circleShape.fillColor = self.flashColor.CGColor
+        if self.buttonType == HJFlashButtonType.hjFlashButtonTypeInner{
+            circleShape.bounds = CGRect(x: 0, y: 0, width: radius * 2, height: radius * 2)
+            if flashColor == UIColor.clear {
+                circleShape.fillColor = self.flashColor.cgColor
             }else{
-                circleShape.fillColor = UIColor.whiteColor().CGColor
+                circleShape.fillColor = UIColor.white.cgColor
             }
         }else{
-            circleShape.fillColor = UIColor.clearColor().CGColor
-            circleShape.strokeColor = self.flashColor == UIColor.clearColor() ? flashColor.CGColor : UIColor.purpleColor().CGColor
+            circleShape.fillColor = UIColor.clear.cgColor
+            circleShape.strokeColor = self.flashColor == UIColor.clear ? flashColor.cgColor : UIColor.purple.cgColor
         }
         
         circleShape.opacity = 0
@@ -124,11 +124,11 @@ class HJButton: UIView,UIGestureRecognizerDelegate {
         
     }
     
-    func createFlashAnimationWithScale(scale:CGFloat,duration:CGFloat) ->CAAnimationGroup{
+    func createFlashAnimationWithScale(_ scale:CGFloat,duration:CGFloat) ->CAAnimationGroup{
     
         var scaleAnimation : CABasicAnimation = CABasicAnimation(keyPath: "transform.scale") // 可能有错
-        scaleAnimation.fromValue = NSValue(CATransform3D: CATransform3DIdentity)
-        scaleAnimation.toValue =  NSValue(CATransform3D: CATransform3DMakeScale(scale, scale, 1))
+        scaleAnimation.fromValue = NSValue(caTransform3D: CATransform3DIdentity)
+        scaleAnimation.toValue =  NSValue(caTransform3D: CATransform3DMakeScale(scale, scale, 1))
         
         var alphaAnimation:CABasicAnimation = CABasicAnimation(keyPath: "opacity")
         
@@ -138,7 +138,7 @@ class HJButton: UIView,UIGestureRecognizerDelegate {
         
         var animation:CAAnimationGroup = CAAnimationGroup()
         animation.animations = [scaleAnimation,alphaAnimation]
-        animation.delegate = self
+        animation.delegate = self as! CAAnimationDelegate
         animation.duration =   CFTimeInterval(duration)
         animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
         return animation
@@ -152,8 +152,8 @@ class HJButton: UIView,UIGestureRecognizerDelegate {
         // Drawing code
     }
     */
-    override func animationDidStop(anim: CAAnimation!, finished flag: Bool) {
-        let layer: CALayer = anim.valueForKey("circleShaperLayer") as CALayer
+    override func animationDidStop(_ anim: CAAnimation!, finished flag: Bool) {
+        let layer: CALayer = anim.value(forKey: "circleShaperLayer") as! CALayer
         layer.removeFromSuperlayer()
     }
 
